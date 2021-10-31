@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            margin: 0px;
+            background-image: url("https://images.unsplash.com/photo-1542255034-288a8a58a2a6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1388&q=80");
+        }
+
+        #main {
+            width: 100%;
+            height: 100%;
+        }
+
+        #container {
+            position: absolute;
+            box-shadow: 0 0 10px black;
+            width: 80%;
+            height: 80%;
+            margin: 5% 10% 5% 10%;
+        }
+
+        #form-parent {
+            width: 30%;
+            float: left;
+            height: 100%;
+            background-color: white;
+        }
+
+        #content {
+            width: 70%;
+            float: right;
+            height: 100%;
+            background-size: cover;
+            background-image: url("4957136.jpg");
+            background-repeat: no-repeat;
+            text-align: left;
+        }
+
+        #form-card {
+            background-color: white;
+            padding: 20px;
+            height: 80%;
+        }
+
+        .form-class {
+            height: 40px;
+        }
+
+        #google {
+            width: 45%;
+            border-radius: 8px;
+            border-color: tomato;
+            height: 40px;
+            float: left;
+            background-color: white;
+            color: tomato;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        #fb {
+            width: 45%;
+            border-radius: 8px;
+            border-color: #007dfe;
+            height: 40px;
+            float: right;
+            background-color: white;
+            color: #007DFE;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        #login {
+            width: 100%;
+            border-radius: 8px;
+            border: none;
+            height: 40px;
+            color: white;
+            font-weight: bold;
+            background-color: #007DFE;
+            cursor: pointer;
+        }
+    </style>
+    </style>
+</head>
+
+
+<body>
+
+    <div id="main">
+        <div id="container">
+            <!-- Form parent -->
+            <div id="form-parent">
+                <div id="form-card">
+                    <div style="padding: 8px 16px 8px 8px;">
+                        <div style="color: black; font-size: 48px;">Login</div>
+                        <div class="form-class">Doesn't have an accont yet?<div
+                                style="float: right; color: purple; text-decoration: underline; cursor: pointer;">Sign
+                                up</div>
+                        </div>
+                        <!-- Email input -->
+                        <div>Email Address</div>
+                        <input style="border-radius: 4px;outline: none; width: 100%; height: 30px; " type="email"
+                            name="email" autocomplete="xyz" placeholder="you@exm.com"></input><br><br>
+                        <!-- Password input -->
+                        <div>Password <div
+                                style="float: right;  color: purple;text-decoration: underline;cursor: pointer;">Forgot
+                                Password?</div>
+                        </div>
+                        <input style="border-radius: 4px;outline: none; width: 100%; height: 30px;" type="password"
+                            name="email" autocomplete="xyz" placeholder="Enter 6 Character or more"></input><br><br>
+
+                        <input type="checkbox" id="password"
+                            style="background-color: blue; color: blue; cursor: pointer;">
+                        <label for="password">Remember me</label><br><br>
+                        <button id="login">LOGIN</button>
+                        <div style="text-align: center;margin-top: 10px; margin-bottom: 10px;">- - - or Login with - - -</div>
+                        <!-- Parent of social login -->
+                        <div style="text-align: center; padding: 8px 0px 8px 0px;">
+                            <button id="google">Google</button>
+                            <button id="fb">Facebook</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="content">
+                <!-- <div style="text-align: left">
+                
+                </div> -->
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
